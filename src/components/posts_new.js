@@ -66,6 +66,12 @@ class PostsNew extends Component {
   }
 }
 
+/**
+ * When you submit/touch a field, redux form validates the field using the validate function
+ * Returns an error object; Property names of the object correspond with the `name` of the field
+ * Similar to error, values is also an object where its properties corresponds to the `name` of the fields but this time for the value
+ * @param {Object} values 
+ */
 function validate(values){
   const errors = {};
   const {title, categories, content} =  values;
